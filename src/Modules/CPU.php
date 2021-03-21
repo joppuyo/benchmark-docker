@@ -26,7 +26,7 @@ class CPU
         'acos',
         'asin',
         'atan',
-        'bindec',
+        //'bindec',
         'floor',
         'exp',
         'sin',

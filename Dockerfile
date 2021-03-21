@@ -24,7 +24,7 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 COPY --chown=www-data:www-data . /var/www/mysite
 
 RUN cd /var/www/mysite && \
-    composer install
+    composer install --ignore-platform-reqs
 
 WORKDIR /var/www/mysite
 
